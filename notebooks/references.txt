@@ -1,2 +1,3 @@
 Diabetes --- Siddhartan Yt SVM
 Heart ---- Siddhartan Yt Logistic 
+liver --- god link -- randomforest
