@@ -68,8 +68,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary"
         style="background-color: black !important; height: 80px; ">
-        <a href="{{ url_for('home') }}"><img src="C:\Users\Sarthak\Desktop\HealthOrzo\static\logo.png" height="60px"
-                width="275px"></a>
+        <a href="{{ url_for('Landing Page') }}"><img src="C:\Users\Sarthak\Desktop\HealthOrzo\static\logo.png"
+                height="60px" width="275px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -82,24 +82,19 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"
                     style="padding: right 10px; color: blue; font-size: large; text-decoration: underline;">
-                    <a href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\Landing Page.html"
-                        class="nav-link">Home</a>
+                    <a href="{{ url_for('Landing Page') }}" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item active" style="font-size: large; text-decoration: underline; ">
-                    <a class="nav-link"
-                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\diabetes.html">Diabetes</a>
+                    <a class="nav-link" href="{{ url_for('diabetes') }}">Diabetes</a>
                 </li>
                 <li class="nav-item active" style="font-size: large; text-decoration: underline;">
-                    <a class="nav-link"
-                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\heart.html">Heart</a>
+                    <a class="nav-link" href="{{ url_for('heart') }}">Heart</a>
                 </li>
                 <li class="nav-item active" style="font-size: large; text-decoration: underline;">
-                    <a class="nav-link"
-                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\kidney.html">Kidney</a>
+                    <a class="nav-link" href="{{ url_for('kidney') }}">Kidney</a>
                 </li>
                 <li class="nav-item active" style="font-size: large; text-decoration: underline;">
-                    <a class="nav-link"
-                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\liver.html">Liver</a>
+                    <a class="nav-link" href="{{ url_for('liver') }}">Liver</a>
                 </li>
 
             </ul>
