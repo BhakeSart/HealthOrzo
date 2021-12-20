@@ -24,7 +24,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="homepage.css">
+
 
     <style>
         html,
@@ -68,8 +68,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary"
         style="background-color: black !important; height: 80px; ">
-        <a href="{{ url_for('Landing Page') }}"><img src="C:\Users\Sarthak\Desktop\HealthOrzo\static\logo.png"
-                height="60px" width="275px"></a>
+        <a href="{{ url_for('home') }}"><img src="C:\Users\Sarthak\Desktop\HealthOrzo\static\logo.png" height="60px"
+                width="275px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -82,7 +82,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"
                     style="padding: right 10px; color: blue; font-size: large; text-decoration: underline;">
-                    <a href="{{ url_for('Landing Page') }}" class="nav-link">Home</a>
+                    <a href="{{ url_for('home') }}" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item active" style="font-size: large; text-decoration: underline; ">
                     <a class="nav-link" href="{{ url_for('diabetesPage') }}">Diabetes</a>

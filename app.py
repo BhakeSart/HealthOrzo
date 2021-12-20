@@ -26,7 +26,7 @@ def predict(values, dic):
 
 @app.route("/")
 def home():
-    return render_template('Landing Page.html')
+    return render_template('home.html')
 
 
 @app.route("/diabetes", methods=['GET', 'POST'])
@@ -58,7 +58,7 @@ def predictPage():
             pred = predict(to_predict_list, to_predict_dict)
     except:
         message = "Please enter valid Data"
-        return render_template("Landing Page.html", message=message)
+        return render_template("home.html", message=message)
 
     return render_template('predict.html', pred=pred)
 
