@@ -68,7 +68,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary"
         style="background-color: black !important; height: 80px; ">
-        <a href="{{ url_for('home') }}"><img src="C:\Users\Sarthak\Desktop\HealthOrzo\static\logo.png" height="60px"
+        <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename = 'logo1.png') }} " height="60px"
                 width="275px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
