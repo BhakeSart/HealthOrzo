@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="HealthOrzo">
+    <meta name="author" content="Sarthak Bhake">
+    <meta name="Keywords"
+        content="Flask, Machine Learning, Deep Learning, Artificial Intelligence, AI, ML,DL, Web Development">
+    <meta name="description"
+        content="A Machine Learning and Deep Learning based website for Multiple Disease Prediction.">
+    <title>HealthOrzo-Your Health Matters</title>
+    <!-- <link rel="icon" href="{{ url_for('static', filename = 'logo.jgp') }}" type="image/icon type"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        header {
+            height: 50px;
+        }
+
+        footer {
+            height: 75px;
+            display: flex;
+            background: black;
+        }
+
+        /* Trick */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            padding: 10px;
+            display: flex;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary"
+        style="background-color: black !important; height: 80px; ">
+        <a href="{{ url_for('home') }}"><img src="C:\Users\Sarthak\Desktop\HealthOrzo\static\logo.png" height="60px"
+                width="275px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <center>
+                <h2 style=" color:white; transform:translateX(250px); text-decoration: underline;">HealthOrzo - Your
+                    Health Matters</h2>
+            </center>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"
+                    style="padding: right 10px; color: blue; font-size: large; text-decoration: underline;">
+                    <a href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\Landing Page.html"
+                        class="nav-link">Home</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline; ">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\diabetes.html">Diabetes</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline;">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\heart.html">Heart</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline;">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\kidney.html">Kidney</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline;">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\liver.html">Liver</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div class="container-fluid" style="margin-bottom: 20px; padding-top: 20px; ">
+            <div class="container">
+                <div class="card card-body"
+                    style="border: 5px solid black; box-shadow: 0 0 10px black; border-radius: 2em;">
+                    <h2 style="text-decoration: underline;">Welcome to Healthorzo</h2>
+
+                    <p>HealthOrzo is a Health Analytics and user friendly Prediction Website. </p>
+                    <br>
+                    <h3 style="text-decoration: underline;">Model Accuracies</h3>
+                    <ul>
+                        <li>Diabetes Model: </li>
+                        <li>Heart Disease Model: </li>
+                        <li>Kidney Disease Model: </li>
+                        <li>Liver Disease Model: </li>
+
+
+                    </ul>
+                    <br>
+                    <h3 style="text-decoration: underline;">Information and Resources</h3>
+
+                    <div class="row">
+                        <div class="col-md-12 card card-body"
+                            style="box-shadow: 0 0 5px black; margin: 5px; border-radius: 2em;">
+                            <h4 style="text-decoration: underline;" ;">Diabetes</h4><br>
+                            <p>Diabetes is a disease that occurs when your blood glucose, also called blood sugar, is
+                                too high. Blood glucose is your main source of energy and comes from the food you eat.
+                                Insulin, a hormone made by the pancreas, helps glucose from food get into your cells to
+                                be used for energy. Sometimes your body doesn’t make enough—or any—insulin or doesn’t
+                                use insulin well. Glucose then stays in your blood and doesn’t reach your cells.</p>
+                            <h5>Symptoms</h5>
+                            <ul>
+                                <li>Urinating often.</li>
+                                <li>Feeling very thirsty.</li>
+                                <li>Extreme fatigue.</li>
+                                <li>Blurry vision.</li>
+                            </ul>
+                            <br>
+                            <a
+                                href="https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes#:~:text=Diabetes%20is%20a%20disease%20that,to%20be%20used%20for%20energy.">Learn
+                                More</a>
+                            <br>
+                            <iframe width="550" height="320" src="https://www.youtube.com/embed/XfyGv-xwjlI"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 card card-body"
+                            style="box-shadow: 0 0 5px black; margin: 5px; border-radius: 2em;">
+                            <h4 style="text-decoration: underline;">Chronic kidney disease</h4>
+                            <p>Chronic kidney disease, also called chronic kidney failure, describes the gradual loss of
+                                kidney function. Your kidneys filter wastes and excess fluids from your blood, which are
+                                then excreted in your urine. When chronic kidney disease reaches an advanced stage,
+                                dangerous levels of fluid, electrolytes and wastes can build up in your body.</p>
+                            <h5>Symptoms</h5>
+                            <ul>
+                                <li>Nausea</li>
+                                <li>Vomiting</li>
+                                <li>Fatigue and weakness</li>
+                                <li>Muscle twitches and cramps</li>
+                            </ul>
+                            <br>
+                            <a
+                                href="https://www.niddk.nih.gov/health-information/kidney-disease/chronic-kidney-disease-ckd#:~:text=Chronic%20kidney%20disease%20(CKD)%20means,family%20history%20of%20kidney%20failure.">Learn
+                                More</a>
+                            <br>
+                            <iframe width="550" height="320" src="https://www.youtube.com/embed/JjcqY95HR1o"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 card card-body"
+                            style="box-shadow: 0 0 5px black; margin: 5px; border-radius: 2em;">
+                            <h4 style="text-decoration: underline;">Liver disease</h4>
+                            <p>The liver is an organ about the size of a football. It sits just under your rib cage on
+                                the right side of your abdomen. The liver is essential for digesting food and ridding
+                                your body of toxic substances.
+
+                                Liver disease can be inherited (genetic). Liver problems can also be caused by a variety
+                                of factors that damage the liver, such as viruses, alcohol use and obesity.
+
+                                Over time, conditions that damage the liver can lead to scarring (cirrhosis), which can
+                                lead to liver failure, a life-threatening condition. But early treatment may give the
+                                liver time to heal.</p>
+                            <h5>Symptoms</h5>
+                            <ul>
+                                <li>Skin and eyes that appear yellowish (jaundice)</li>
+                                <li>Abdominal pain and swelling</li>
+                                <li>Swelling in the legs and ankles</li>
+                                <li>Itchy skin</li>
+                                <li>Chronic fatigue</li>
+                                <li>Loss of appetite</li>
+                            </ul>
+                            <br>
+                            <a
+                                href="https://www.mayoclinic.org/diseases-conditions/liver-problems/symptoms-causes/syc-20374502">Learn
+                                More</a>
+                            <br>
+                            <iframe width="550" height="320" src="https://www.youtube.com/embed/OLd3PFLfGl4"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 card card-body"
+                            style="box-shadow: 0 0 5px black; margin: 5px; border-radius: 2em;">
+                            <h4 style="text-decoration: underline;">Heart Disease</h4>
+                            <p>Heart disease, such as coronary heart disease, heart attack, congestive heart failure,
+                                and congenital heart disease, is the leading cause of death for men and women in the
+                                U.S. Prevention includes quitting smoking, lowering cholesterol, controlling high blood
+                                pressure, maintaining a healthy weight, and exercising.</p>
+                            <h5>Symptoms</h5>
+                            <ul>
+                                <li>Shortness of breath</li>
+                                <li>Pain in the neck, jaw, throat, upper abdomen or back</li>
+                                <li>Pain, numbness, weakness or coldness in your legs or arms if the blood vessels in
+                                    those parts of your body are narrowed</li>
+                                <li>Chest pain, chest tightness, chest pressure and chest discomfort (angina)</li>
+                            </ul>
+                            <br>
+                            <a href="https://www.cdc.gov/heartdisease/about.htm">Learn More</a>
+                            <br>
+                            <iframe width="550" height="320" src="https://www.youtube.com/embed/qJq5hA4pnOk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

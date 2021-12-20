@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="HealthOrzo">
+    <meta name="author" content="Sarthak Bhake">
+    <meta name="Keywords"
+        content="Flask, Machine Learning, Deep Learning, Artificial Intelligence, AI, ML,DL, Web Development">
+    <meta name="description"
+        content="A Machine Learning and Deep Learning based webapp for Multiple Disease Prediction.">
+    <title>Kidney Disease Prediction</title>
+    <!-- <link rel="icon" href="{{ url_for('static', filename = 'logo1.png') }}" type="image/icon type"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-color: #ade8f4;
+        }
+
+        header {
+            height: 50px;
+        }
+
+        footer {
+            height: 75px;
+            background: black;
+        }
+
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            padding: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary"
+        style="background-color: black !important; height: 80px; ">
+        <a href="{{ url_for('home') }}"><img src="C:\Users\Sarthak\Desktop\HealthOrzo\static\logo.png" height="60px"
+                width="275px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <center>
+                <h2 style=" color:white; transform:translateX(250px); text-decoration: underline;">HealthOrzo - Your
+                    Health Matters</h2>
+            </center>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"
+                    style="padding: right 10px; color: blue; font-size: large; text-decoration: underline;">
+                    <a href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\Landing Page.html"
+                        class="nav-link">Home</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline; ">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\diabetes.html">Diabetes</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline;">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\heart.html">Heart</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline;">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\kidney.html">Kidney</a>
+                </li>
+                <li class="nav-item active" style="font-size: large; text-decoration: underline;">
+                    <a class="nav-link"
+                        href="C:\Users\Sarthak\Desktop\Projects\HealthOrzo\Front End\liver.html">Liver</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <div class="row" style="margin-bottom: 125px;">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <center>
+                    <h1>Kidney Disease Prediction</h1>
+                </center>
+                <div class="card card-body" style="border: 1px solid black;">
+                    <form class="form-horizontal" action="{{ url_for('predictPage') }}" method="POST">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="age"
+                                        placeholder="age">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="bp"
+                                        placeholder="bp">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="al"
+                                        placeholder="al">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="su"
+                                        placeholder="su">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="rbc"
+                                        placeholder="rbc">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="pc"
+                                        placeholder="pc">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="pcc"
+                                        placeholder="pcc">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="ba"
+                                        placeholder="ba">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="bgr"
+                                        placeholder="bgr">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="bu"
+                                        placeholder="bu">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="sc"
+                                        placeholder="sc">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="pot"
+                                        placeholder="pot">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="wc"
+                                        placeholder="wc">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="htn"
+                                        placeholder="htn">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="dm"
+                                        placeholder="dm">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="cad"
+                                        placeholder="cad">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="pe"
+                                        placeholder="pe">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input style="border: 1px solid black;" class="form-control" type="text" name="ane"
+                                        placeholder="ane">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" class="btn btn-info btn-block" value="Predict">
+                    </form>
+                </div>
+    </main>
+    <!-- <footer>
+        <center>
+            <ul style="list-style-type:none;">
+
+                <li>
+                    <p style="color: white;">Made<span> by ETD_03 Group</span>
+                    </p>
+                </li>
+            </ul>
+        </center>
+    </footer> -->
+</body>
+
+</html>
