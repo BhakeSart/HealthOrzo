@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, flash, redirect
 import pickle
 import numpy as np
@@ -10,6 +9,10 @@ app = Flask(__name__)
 def predict(values, dic):
     if len(values) == 8:
         model = pickle.load(open('models/diabetes.pkl', 'rb'))
+        values = np.asarray(values)
+        return model.predict(values.reshape(1, -1))[0]
+    elif len(values) == 26:
+        model = pickle.load(open('models/breast_cancer.pkl', 'rb'))
         values = np.asarray(values)
         return model.predict(values.reshape(1, -1))[0]
     elif len(values) == 13:
