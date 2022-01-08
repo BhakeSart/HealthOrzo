@@ -6,7 +6,6 @@ certifi==2021.5.30
 chardet==4.0.0
 click==8.0.1
 colorama==0.4.4
-dataclasses==0.8
 Flask==1.1.1
 gast==0.2.2
 google-auth==1.31.0
@@ -18,9 +17,6 @@ idna==2.10
 importlib-metadata==4.5.0
 itsdangerous==2.0.1
 Jinja2==3.0.1
-joblib==1.0.1
-Keras-Applications==1.0.8
-Keras-Preprocessing==1.1.2
 Markdown==3.3.4
 MarkupSafe==2.0.1
 numpy==1.19.5
@@ -37,9 +33,6 @@ rsa==4.7.2
 scikit-learn==0.21.3
 scipy==1.5.4
 six==1.16.0
-tensorboard==2.1.1
-tensorflow==2.1.0
-tensorflow-estimator==2.1.0
 termcolor==1.1.0
 typing-extensions==3.10.0.0
 urllib3==1.26.5
