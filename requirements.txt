@@ -199,7 +199,7 @@ PyNaCl @ file:///C:/ci/pynacl_1595000047588/work
 pyodbc===4.0.0-unsupported
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
 pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
-pypiwin32==223
+pywin32>=301
 PyPrind==2.11.3
 pyreadline==2.1
 pyrsistent @ file:///C:/ci/pyrsistent_1600141795814/work
