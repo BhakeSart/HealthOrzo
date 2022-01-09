@@ -11,10 +11,6 @@ def predict(values, dic):
         model = pickle.load(open('models/diabetes.pkl', 'rb'))
         values = np.asarray(values)
         return model.predict(values.reshape(1, -1))[0]
-    elif len(values) == 26:
-        model = pickle.load(open('models/breast_cancer.pkl', 'rb'))
-        values = np.asarray(values)
-        return model.predict(values.reshape(1, -1))[0]
     elif len(values) == 13:
         model = pickle.load(open('models/heart.pkl', 'rb'))
         values = np.asarray(values)
@@ -54,7 +50,7 @@ def liverPage():
     return render_template('liver.html')
 
 
-@app.route("/predict", methods=['POST', 'GET'])
+@app.route("/predict", methods=['GET', 'POST'])
 def predictPage():
     try:
         if request.method == 'POST':
@@ -63,7 +59,7 @@ def predictPage():
             pred = predict(to_predict_list, to_predict_dict)
     except:
         message = "Please enter valid Data"
-        return render_template("home.html", message=message)
+        return render_template('predict.html', pred=message)
 
     return render_template('predict.html', pred=pred)
 
