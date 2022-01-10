@@ -6,66 +6,67 @@ import numpy as np
 app = Flask(__name__)
 
 
-def predict(values, dic):
+def predict(values):
     if len(values) == 8:
-        model = pickle.load(open('models/diabetes.pkl', 'rb'))
-        values = np.asarray(values)
-        return model.predict(values.reshape(1, -1))[0]
-    elif len(values) == 26:
-        model = pickle.load(open('models/breast_cancer.pkl', 'rb'))
-        values = np.asarray(values)
-        return model.predict(values.reshape(1, -1))[0]
+        to_predict = np.array(values).reshape(1, 8)
+        loaded_model = pickle.load(open("models/diabetes.pkl", "rb"))
+        result = loaded_model.predict(to_predict)
+        return result[0]
+
     elif len(values) == 13:
-        model = pickle.load(open('models/heart.pkl', 'rb'))
-        values = np.asarray(values)
-        return model.predict(values.reshape(1, -1))[0]
+        to_predict = np.array(values).reshape(1, 13)
+        loaded_model = pickle.load(open("models/heart.pkl", "rb"))
+        result = loaded_model.predict(to_predict)
+        return result[0]
+
     elif len(values) == 18:
-        model = pickle.load(open('models/kidney.pkl', 'rb'))
-        values = np.asarray(values)
-        return model.predict(values.reshape(1, -1))[0]
+        to_predict = np.array(values).reshape(1, 18)
+        loaded_model = pickle.load(open("models/kidney.pkl", "rb"))
+        result = loaded_model.predict(to_predict)
+        return result[0]
+
     elif len(values) == 10:
-        model = pickle.load(open('models/liver.pkl', 'rb'))
-        values = np.asarray(values)
-        return model.predict(values.reshape(1, -1))[0]
+        to_predict = np.array(values).reshape(1, 10)
+        loaded_model = pickle.load(open("models/liver.pkl", "rb"))
+        result = loaded_model.predict(to_predict)
+        return result[0]
 
 
-@app.route("/")
+@ app.route("/")
 def home():
     return render_template('home.html')
 
 
-@app.route("/diabetes", methods=['GET', 'POST'])
+@ app.route("/diabetes", methods=['GET', 'POST'])
 def diabetesPage():
     return render_template('diabetes.html')
 
 
-@app.route("/heart", methods=['GET', 'POST'])
+@ app.route("/heart", methods=['GET', 'POST'])
 def heartPage():
     return render_template('heart.html')
 
 
-@app.route("/kidney", methods=['GET', 'POST'])
+@ app.route("/kidney", methods=['GET', 'POST'])
 def kidneyPage():
     return render_template('kidney.html')
 
 
-@app.route("/liver", methods=['GET', 'POST'])
+@ app.route("/liver", methods=['GET', 'POST'])
 def liverPage():
     return render_template('liver.html')
 
 
-@app.route("/predict", methods=['POST', 'GET'])
+@ app.route("/predict", methods=['GET', 'POST'])
 def predictPage():
-    try:
-        if request.method == 'POST':
-            to_predict_dict = request.form.to_dict()
-            to_predict_list = list(map(float, list(to_predict_dict.values())))
-            pred = predict(to_predict_list, to_predict_dict)
-    except:
-        message = "Please enter valid Data"
-        return render_template("home.html", message=message)
 
-    return render_template('predict.html', pred=pred)
+    if request.method == 'POST':
+        to_predict_list = request.form.to_dict()
+        to_predict_list = list(to_predict_list.values())
+        to_predict_list = list(map(float, to_predict_list))
+        pred = predict(to_predict_list)
+
+        return render_template('predict.html', pred=pred)
 
 
 if __name__ == '__main__':
