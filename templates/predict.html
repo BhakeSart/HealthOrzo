@@ -40,19 +40,14 @@
     <div class="col-md-6">
         {% if pred == 1 %}
         <div class="card card-body alert alert-danger">
-            <center>Thats a Worry, You may have to consult the Doctor.</center>
+            <center>That's a worry! , You may have to consult a Doctor.</center>
         </div>
         {% else %}
         <div class="card card-body alert alert-success">
             <center>Great! You are Healthy.</center>
         </div>
         {% endif %}
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4"><a href="{{ url_for('home') }}" class="btn btn-block btn-primary">Back to Home</a>
-            </div>
-            <div class="col-md-4"></div>
-        </div>
+
     </div>
     <div class="col-md-3"></div>
 </div>
