@@ -22,7 +22,8 @@ HealthOrzo is a User friendly Website made for Health Informatics and Prediction
 ## Note
 
 ===> Python Version 3.8.8 was used for this Project. <br>
-===> All the rendered and the Saved Models can be Found in <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/models">Models</a> Folder.
+===> All the Jupyter Notebooks can be Found in the <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/notebooks">Notebooks</a> Folder.
+===> All the rendered and the Saved Models can be Found in the <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/models">Models</a> Folder.
 
 ## Datasets Used
 
