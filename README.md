@@ -22,8 +22,8 @@ HealthOrzo is a User friendly Website made for Health Informatics and Prediction
 ## Note
 
 ===> Python Version 3.8.8 was used for this Project. <br>
-===> All the Jupyter Notebooks can be Found in the <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/notebooks">Notebooks</a> Folder.
-===> All the rendered and the Saved Models can be Found in the <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/models">Models</a> Folder.
+===> All the Jupyter Notebooks can be Found in the <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/notebooks">Notebooks Folder</a>. <br>
+===> All the rendered and the Saved Models can be Found in the <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/models">Models Folder</a>.
 
 ## Datasets Used
 
@@ -33,3 +33,13 @@ The Datasets Used for this Project were taken from <a href="https://www.kaggle.c
 - <a href="https://www.kaggle.com/ronitf/heart-disease-uci">Heart Ailment Dataset</a>.
 - <a href="https://www.kaggle.com/mansoordaku/ckdisease">Kidney Disease Dataset</a>.
 - <a href="https://www.kaggle.com/uciml/indian-liver-patient-records">Liver Disease Dataset</a>.
+
+## Steps to Run the Website on your System
+
+- Clone or download the repo.
+- Open command prompt in the downloaded folder.
+- Create a virtual environment
+```
+mkvirtualenv environment_name
+
+```
