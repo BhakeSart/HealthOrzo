@@ -38,8 +38,16 @@ The Datasets Used for this Project were taken from <a href="https://www.kaggle.c
 
 - Clone or download the repo.
 - Open command prompt in the downloaded folder.
-- Create a virtual environment
+- Create a virtual environment.
 ```
 mkvirtualenv environment_name
-
 ```
+- Install the Dependencies.
+```
+pip install -r requirements.txt
+```
+- Run the Flask App.
+```
+pip install -r requirements.txt
+```
+
