@@ -16,4 +16,6 @@ HealthOrzo is a User friendly Website made for Health Informatics and Prediction
 | :---        |    :----:   |          ---: |
 | Diabetes      | Support Vector Machine (SVM)      | Here's this   |
 | Heart Ailment   | Logistic Regression        | And more      |
+| Kidney Disease | Random Forests | Blah |
+| Liver Disease | Random Forests | Blah |
 
