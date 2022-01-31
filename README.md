@@ -10,5 +10,10 @@ HealthOrzo is a User friendly Website made for Health Informatics and Prediction
 - Kidney Disease.
 - Liver Disease.
 
+## Accuracy of the Models and Algorithms Used
 
+| Disease      | Algorithm Used | Accuracy     |
+| :---        |    :----:   |          ---: |
+| Diabetes      | Support Vector Machine (SVM)      | Here's this   |
+| Heart Ailment   | Logistic Regression        | And more      |
 
