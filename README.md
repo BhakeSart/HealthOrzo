@@ -23,3 +23,12 @@ HealthOrzo is a User friendly Website made for Health Informatics and Prediction
 
 ===> Python Version 3.8.8 was used for this Project. <br>
 ===> All the rendered and the Saved Models can be Found in <a href="https://github.com/BhakeSart/HealthOrzo/tree/main/models">Models</a> Folder.
+
+## Datasets Used
+
+The Datasets Used for this Project were taken from <a href="https://www.kaggle.com/">Kaggle</a>
+
+1. <a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database">Diabetes Dataset</a> 
+2. <a href="https://www.kaggle.com/ronitf/heart-disease-uci">Heart Ailment Dataset</a>.
+3. <a href="https://www.kaggle.com/mansoordaku/ckdisease">Kidney Disease Dataset</a>.
+4. <a href="https://www.kaggle.com/uciml/indian-liver-patient-records">Liver Disease Dataset</a>.
