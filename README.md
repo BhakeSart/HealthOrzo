@@ -40,7 +40,11 @@ The Datasets Used for this Project were taken from <a href="https://www.kaggle.c
 - Open command prompt in the downloaded folder.
 - Create a virtual environment.
 ```
-mkvirtualenv environment_name
+virtualenv environment_name
+```
+- Activate the New Environment
+```
+source environment_name/bin/activate
 ```
 - Install the Dependencies.
 ```
