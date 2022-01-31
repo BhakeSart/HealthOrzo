@@ -28,7 +28,7 @@ HealthOrzo is a User friendly Website made for Health Informatics and Prediction
 
 The Datasets Used for this Project were taken from <a href="https://www.kaggle.com/">Kaggle</a>
 
-1. <a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database">Diabetes Dataset</a> 
-2. <a href="https://www.kaggle.com/ronitf/heart-disease-uci">Heart Ailment Dataset</a>.
-3. <a href="https://www.kaggle.com/mansoordaku/ckdisease">Kidney Disease Dataset</a>.
-4. <a href="https://www.kaggle.com/uciml/indian-liver-patient-records">Liver Disease Dataset</a>.
+- <a href="https://www.kaggle.com/uciml/pima-indians-diabetes-database">Diabetes Dataset</a> 
+- <a href="https://www.kaggle.com/ronitf/heart-disease-uci">Heart Ailment Dataset</a>.
+- <a href="https://www.kaggle.com/mansoordaku/ckdisease">Kidney Disease Dataset</a>.
+- <a href="https://www.kaggle.com/uciml/indian-liver-patient-records">Liver Disease Dataset</a>.
