@@ -3,7 +3,7 @@
 
 ## About
 
-HealthOrzo is a User friendly Website made for Health Informatics and Prediction. It incorporates 4 Machine Learning Models , Each one Corresponding to a disease. The Diseases That the Website predicts and provides information are as Follows:
+HealthOrzo is a User friendly Website made for Health Informatics and Prediction. It incorporates 4 Machine Learning Models , Each one Corresponding to a disease. The Diseases That the Website predicts and provides information on are as Follows:
 
 - Diabetes.
 - Heart Ailment.
