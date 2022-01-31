@@ -19,3 +19,6 @@ HealthOrzo is a User friendly Website made for Health Informatics and Prediction
 | Kidney Disease | Random Forests | 100% |
 | Liver Disease | Random Forests | 73% |
 
+## Note
+
+===> Python Version 3.8.8 was used for this Project.
