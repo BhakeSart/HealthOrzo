@@ -1,4 +1,4 @@
-Python==3.8.8
+
 Flask==1.1.2
 matplotlib==3.3.4
 numpy>=1.21
